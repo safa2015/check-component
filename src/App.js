@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Address from "./components/Address";
+import FullName from "./Components/FullName";
+import safa from "./components/safa.gpg"
+import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div style={{ backgroundColor: "black", height: "800px" }}>
+      <div class="row" style={{ backgroundColor: "white", height: "200px" }}>
+        <div
+          className="col-sm-4"
+          style={{ paddingTop: "30px", paddingLeft: "50px" }}
         >
-          Learn React
-        </a>
-      </header>
+          <ProfilePhoto />
+        </div>
+        <div className="col-sm-8">
+          <FullName />
+          <Address />
+        </div>
+      </div>
     </div>
   );
 }
